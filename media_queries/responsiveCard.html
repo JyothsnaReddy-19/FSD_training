@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Card</title>
+
+    <style>
+
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body
+        {
+            background-color:#f2f2f2;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            padding:20px;
+        }
+
+        h1
+        {
+            margin-bottom:20px;
+        }
+
+        .product-card
+        {
+            width:300px;
+            background-color:white;
+            border:1px solid #ccc;
+            border-radius:10px;
+            text-align:center;
+            padding:15px;
+        }
+
+        .image-container
+        {
+            overflow:hidden;
+            border-radius:10px;
+        }
+
+        .image-container img
+        {
+            width:100%;
+            transition:0.5s;
+        }
+
+        .image-container img:hover
+        {
+            transform:scale(1.1);
+        }
+
+        .product-details h2
+        {
+            margin-top:15px;
+            margin-bottom:10px;
+        }
+
+        .price
+        {
+            font-size:20px;
+            color:green;
+            margin-bottom:15px;
+        }
+
+        .buy-btn
+        {
+            padding:10px 20px;
+            border:none;
+            background-color:blue;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+
+            transition:0.3s;
+        }
+
+        .buy-btn:hover
+        {
+            background-color:rgb(3, 3, 83);
+        }
+
+        @media(max-width:600px)
+        {
+            .product-card
+            {
+                width:100%;
+                background-color: rgb(210, 231, 250);
+                
+            }
+
+             
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Responsive Product Card</h1>
+
+    <div class="product-card">
+
+        <div class="image-container">
+
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="Product Image">
+
+        </div>
+
+        <div class="product-details">
+
+            <h2>Running Shoes</h2>
+
+            <p class="price">$99</p>
+
+            <button class="buy-btn">Buy Now</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

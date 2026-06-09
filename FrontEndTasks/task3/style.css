@@ -1,0 +1,69 @@
+ 
+body{
+    padding-top:80px;
+}
+.carousel-item{
+    height:70vh;
+    position:relative;
+}
+
+.carousel-img{
+    height:100%;
+    object-fit:cover;
+}
+
+ 
+
+.carousel-item::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:1;
+}
+
+ 
+
+.carousel-caption{
+    bottom:30%;
+    z-index:2;
+}
+
+.carousel-caption h1{
+    font-size:60px;
+}
+
+.carousel-caption p{
+    font-size:24px;
+}
+
+
+.icon{ 
+    font-size:50px; 
+    color:gold; 
+
+}
+
+.event-card{
+    transition:0.3s;
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.event-card:hover{
+    transform:translateY(-10px);
+}
+
+ .event-card img{
+    height:250px;
+    object-fit:cover;
+}
+
+  
+  
+
+        

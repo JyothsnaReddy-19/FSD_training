@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <style>
+
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body
+        {
+            background-color:#efe2c2;
+        }
+
+        header
+        {
+            background-color:#c05697;
+            color:white;
+            padding:15px;
+
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+
+        .logo
+        {
+            font-size:24px;
+            font-weight:bold;
+        }
+
+        nav ul
+        {
+            list-style:none;
+            display:flex;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        nav ul li a
+        {
+            text-decoration:none;
+            color:white;
+        }
+
+        .hero
+        {
+            text-align:center;
+            padding:80px 20px;
+            background-color:#ffb090;
+
+            animation:fadeIn 2s;
+        }
+
+        .hero h1
+        {
+            margin-bottom:20px;
+            color:#5c2167;
+        }
+
+        .hero p
+        {
+            margin-bottom:20px;
+            color:#5c2167;
+        }
+
+        .register-btn
+        {
+            padding:12px 25px;
+            border:none;
+            background-color:#5c2167;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+
+            transition:0.3s;
+        }
+
+        .register-btn:hover
+        {
+            background-color:#c05697;
+        }
+
+        .features
+        {
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            padding:40px 20px;
+            flex-wrap:wrap;
+        }
+
+        .feature-box
+        {
+            background-color:white;
+            padding:25px;
+            width:250px;
+            text-align:center;
+            border-radius:10px;
+            border:2px solid #c05697;
+
+            animation:fadeIn 2s;
+        }
+
+        .feature-box h2
+        {
+            margin-bottom:10px;
+            color:#c05697;
+        }
+
+        footer
+        {
+            background-color:#5c2167;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        @keyframes fadeIn
+        {
+            from
+            {
+                opacity:0;
+                transform:translateY(20px);
+            }
+
+            to
+            {
+                opacity:1;
+                transform:translateY(10px);
+            }
+        }
+
+        @media(max-width:768px)
+        {
+            header
+            {
+                flex-direction:column;
+                text-align:center;
+            }
+
+            nav ul
+            {
+                margin-top:10px;
+                flex-direction:column;
+                gap:10px;
+            }
+
+            .features
+            {
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">CVR College of Engineering</div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Attendance</a></li>
+                <li><a href="#">Results</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <h1>Welcome to Student Management System</h1>
+
+        <p>Manage student details, attendance and results easily.</p>
+
+        <button class="register-btn">Register</button>
+
+    </section>
+
+    <section class="features">
+
+        <div class="feature-box">
+
+            <h2>Student Registration</h2>
+
+            <p>Register new students quickly and easily.</p>
+
+        </div>
+
+        <div class="feature-box">
+
+            <h2>Attendance</h2>
+
+            <p>Track daily student attendance records.</p>
+
+        </div>
+
+        <div class="feature-box">
+
+            <h2>Results</h2>
+
+            <p>Check and manage student exam results.</p>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 ABC College | All Rights Reserved</p>
+
+    </footer>
+
+</body>
+</html>

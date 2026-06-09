@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <style>
+
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body
+        {
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background-color:#ffe6e6;
+            padding:20px;
+        }
+
+         h1
+        {
+            margin-bottom:20px;
+        }
+
+        .login-form
+        {
+            width:300px;
+            background-color:white;
+            padding:30px;
+            border-radius:10px;
+            border:2px solid #ff9999;
+
+            animation:fadeIn 1s;
+        }
+
+        .login-form h2
+        {
+            text-align:center;
+            margin-bottom:20px;
+            color:#ff4d4d;
+        }
+
+        .input-box
+        {
+            margin-bottom:15px;
+        }
+
+        .input-box input
+        {
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        .login-btn
+        {
+            width:100%;
+            padding:10px;
+            border:none;
+            border-radius:5px;
+            background-color:#ff4d4d;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+
+            transition:0.3s;
+        }
+
+        .login-btn:hover
+        {
+            background-color:#cc0000;
+        }
+
+        @keyframes fadeIn
+        {
+            from
+            {
+                opacity:0;
+            }
+
+            to
+            {
+                opacity:2;
+            }
+        }
+
+        @media(max-width:600px)
+        {
+            .login-form
+            {
+                width:100%;
+                background-color: antiquewhite;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+     <h1>Responsive Login Form </h1>
+
+    <form class="login-form">
+        
+
+        <h2>Login Form</h2>
+
+        <div class="input-box">
+            <input type="text" placeholder="Enter Username">
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="Enter Password">
+        </div>
+
+        <button class="login-btn">Login</button>
+
+    </form>
+
+</body>
+</html>
